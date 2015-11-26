@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::resource('users', 'UsersController');
 
 Route::get('home', 'AccountController@home');
+// mia modifica
+Route::resource('articles', 'ArticlesController');
+
+
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
